@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>wait</title>
+	<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="wait.js"></script>
+
+
+	<script>
+		function onload(){
+			
+			//把带有动画的div加载到页面中
+			waitInit();
+
+			//设置你喜欢的等待动画样式
+			setWaitCss('flower-loader');
+
+			//设置背景透明度
+			setWaitOpa(0.7);
+
+			//设置显示的文字
+			setWaitText('加载中...');
+
+			//显示等待动画,如果你觉得设置这么多东西很麻烦,可以直接调用此方法
+			showWait();
+
+			//隐藏等待动画
+			//hideWait();
+
+		}
+	</script>
+
+</head>
+<body onload='onload()'>
+
+</body>
+</html>
